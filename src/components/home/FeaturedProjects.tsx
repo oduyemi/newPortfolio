@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
@@ -17,59 +18,86 @@ type Project = {
 const projects = [
   {
     id: 1,
-    name: "E-Commerce Dashboard",
-    image: "/projects/ecommerce.png",
-    description: "A robust analytics platform for e-commerce admins.",
-    fullDescription: "Built with Next.js and Chart.js to visualize sales, customers, and inventory in real-time.",
-    stack: ["Next.js", "Tailwind CSS", "Chart.js"],
-    url: "https://example.com/ecommerce"
+    name: "Simple Todo Application",
+    image: "/images/projects/todospring.jpg",
+    description: "Simple and classy task management app.",
+    fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.
+                     <br/><br/>
+                     <a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
+    stack: ["Java", "Spring Framework"],
+    url: "https://github.com/oduyemi/todo"
   },
   {
     id: 2,
-    name: "AI Blog Generator",
-    image: "/images/projects/aiblog.png",
-    description: "Generates SEO-friendly blogs using OpenAI APIs.",
-    fullDescription: "Integrates GPT-4 to create long-form content with customizable tone, length, and citations.",
+    name: "Idyll Consults",
+    image: "/images/projects/idyllconsults.jpg",
+    description: "Official platform for UK-based Idyll Consults.",
+    fullDescription: `At Idyll Consults, the mission is to empower students globally through ethical recruitment and strong support systems.
+    <br/><br/>
+    <em>“Excellence is not just a goal — it’s our commitment.”</em><br/>
+    The team works relentlessly to guide students with the right resources, every step of the way.
+    <br/><br/>
+    Visit Idyll Consults today and explore a world of opportunity.`,
     stack: ["React", "OpenAI API", "Node.js"],
-    url: "https://example.com/aiblog"
+    url: "https://www.idyllconsults.com/"
   },
   {
     id: 3,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
-    description: "Manage leave, performance and HR workflows in one place.",
-    fullDescription: "A streamlined portal to track employee time off, reviews, and documents with secure access.",
-    stack: ["Vue", "Firebase", "Sass"],
-    url: "https://example.com/hrportal"
+    description: "Web app for a modern wellness clinic across 4 U.S. states.",
+    fullDescription: `Giba Medical Clinic is redefining healthcare with cutting-edge therapies:
+    <br/><br/>
+    🔹 Weight Loss Programs <br/>
+    🔹 Hormone Replacement Therapy <br/>
+    🔹 Virtual Consultations <br/>
+    🔹 Direct Primary Care <br/><br/>
+    Also includes a custom admin dashboard to manage users, emails, inquiries, and internal workflows.
+    <br/><br/>
+    Experience the future of wellness with Giba.`,
+    stack: ["NextJS", "ExpressJS", "Mongoose"],
+    url: "https://gibarestorative.com"
   },
   {
     id: 4,
-    name: "Crypto Tracker",
-    image: "/projects/crypto.png",
-    description: "Real-time dashboard for monitoring crypto markets.",
-    fullDescription: "Using CoinGecko API and WebSockets for live updates. Includes portfolio monitoring and alerts.",
-    stack: ["React", "Socket.io", "CoinGecko API"],
-    url: "https://example.com/crypto"
+    name: "LinkOrgNet",
+    image: "/images/projects/linkorgnet.png",
+    description: "Corporate website for LinkOrg Networks LTD.",
+    fullDescription: `LinkOrg Networks delivers fast, scalable internet across Nigeria, using a mix of fiber optics, radio tech, and satellite solutions.
+    <br/><br/>
+    ⚡ High-Speed <br/>
+    🌍 Global Connectivity <br/>
+    💸 Affordable Plans <br/>
+    💬 Always-On Support <br/><br/>
+    Built to scale with business and residential needs alike.`,
+    stack: ["React", "Socket.io", "Express API", "Mongoose", "TypeScript"],
+    url: "https://linkorgnet.com.ng"
   },
   {
     id: 5,
-    name: "Startup Landing Page",
-    image: "/projects/startup.png",
-    description: "Sleek landing page optimized for conversions.",
-    fullDescription: "Built with responsiveness and performance in mind. Integrates analytics and user tracking.",
-    stack: ["Next.js", "Framer Motion", "Vercel"],
-    url: "https://example.com/startup"
+    name: "GrowAfrica Landing Page",
+    image: "/images/projects/growafrica.jpg",
+    description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
+    fullDescription: `GrowAfrica is preparing for its 2026 launch by gathering interest from shoppers and vendors across the continent.
+    <br/><br/>
+    The landing page features a data collection modal form and an admin dashboard connected to GrowAPI for realtime access.
+    <br/><br/>
+    🌍 Want to shop or sell African products?<br/>
+    Join the movement — for Africans, by Africans.`,
+    stack: ["React.js", "Framer Motion", "Vercel", "TypeScript", "Express.js", "Mongoose"],
+    url: "https://growafrica.vercel.app"
   },
   {
     id: 6,
-    name: "EdTech Course Hub",
-    image: "/projects/edtech.png",
-    description: "Course marketplace with user dashboard and payments.",
-    fullDescription: "Built with React, Stripe, and Firebase Auth to manage subscriptions and course progress.",
-    stack: ["React", "Stripe", "Firebase"],
-    url: "https://example.com/edtech"
+    name: "Artist Portfolio Website",
+    image: "/images/projects/abecole.png",
+    description: "A digital portfolio for UK-based Nigerian artist, Abraham Cole.",
+    fullDescription: `A beautifully minimal showcase of Abraham Cole’s work. This project merges artistry and engineering to deliver a smooth, immersive viewing experience for art lovers and collectors alike.`,
+    stack: ["React", "SASS", "Tailwind CSS", "Node.js", "Express.js"],
+    url: "https://abrahamcole.vercel.app"
   }
 ];
+
 
 export const FeaturedProjects: React.FC = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);

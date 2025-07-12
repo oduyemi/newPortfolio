@@ -72,7 +72,7 @@ export const Header: React.FC = () => {
           <Button variant="outline">GitHub Profile</Button>
         </a>
         <a href="https://github.com/oduyemi" target="_blank" rel="noopener noreferrer">
-          <Button variant="default">Project Portal</Button>
+          <Button variant="monochrome">Project Portal</Button>
         </a>
 
         <DropdownMenu>
