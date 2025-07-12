@@ -17,7 +17,7 @@ export const Banner: React.FC = () => {
   return (
     <>
    <div className="h-16" />
-    <section className="relative w-full pt-[60px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative w-full pt-[80px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* Subtle grid background */}
       <div className="relative z-0 opacity-10">
         <div className="relative bg-[url('/images/grid.jpg')] bg-center [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)]" />
