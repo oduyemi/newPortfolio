@@ -17,7 +17,7 @@ export const Banner: React.FC = () => {
   return (
     <>
    <div className="h-16" />
-    <section className="relative w-full pt-[60px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative w-full pt-[40px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* Subtle grid background */}
       <div className="relative z-0 opacity-10">
         <div className="relative bg-[url('/images/grid.jpg')] bg-center [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)]" />
@@ -31,7 +31,7 @@ export const Banner: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 0.03, y: 0 }}
             transition={{ duration: 0.8, delay: i * 0.2 }}
-            className="text-[10px] leading-tight font-mono text-gray-600"
+            className="text-[10px] leading-tight font-mono text-[#ccc]"
             style={{
               left: pos.left,
               top: pos.top,
@@ -53,10 +53,10 @@ export const Banner: React.FC = () => {
             className="space-y-2"
           >
             <div className="flex flex-col items-center lg:items-start">
-              <h1 className="text-xl font-bold tracking-tight text-gray-600 bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+              <h1 className="text-xl font-bold tracking-tight text-[#999] bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 shiftleft">
                 &lt;dev/&gt;
               </h1>
-              <p className="text-lg text-[#3a3a3a] font-light mvup">
+              <p className="text-lg text-[#ccc] font-light mvup shiftleft">
                 Crafting elegant solutions
               </p>
             </div>
@@ -137,7 +137,7 @@ export const Banner: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mt-[-3%] col-span-1 lg:col-span-3 text-center text-gray-500 text-sm font-light italic"
+          className="mt-[-6%] col-span-1 lg:col-span-3 text-center text-[#777] shiftleft text-sm font-light italic"
         >
           &ldquo;Turning complex problems into elegant, maintainable solutions&rdquo;
 
