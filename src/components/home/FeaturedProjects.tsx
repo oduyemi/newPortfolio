@@ -5,25 +5,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Projects.module.css";
 
-type Project = {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  fullDescription: string;
-  stack: string[];
-  url: string;
-};
-
 const projects = [
   {
     id: 1,
     name: "Simple Todo Application",
     image: "/images/projects/todospring.jpg",
     description: "Simple and classy task management app.",
-    fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.
-                     <br/><br/>
-                     <a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
+    fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.<br/><br/><a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
     stack: ["Java", "Spring Framework"],
     url: "https://github.com/oduyemi/todo"
   },
@@ -32,12 +20,7 @@ const projects = [
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
-    fullDescription: `At Idyll Consults, the mission is to empower students globally through ethical recruitment and strong support systems.
-    <br/><br/>
-    <em>“Excellence is not just a goal — it’s our commitment.”</em><br/>
-    The team works relentlessly to guide students with the right resources, every step of the way.
-    <br/><br/>
-    Visit Idyll Consults today and explore a world of opportunity.`,
+    fullDescription: `At Idyll Consults, the mission is to empower students globally through ethical recruitment and strong support systems.<br/><br/><em>“Excellence is not just a goal — it’s our commitment.”</em><br/>The team works relentlessly to guide students with the right resources, every step of the way.<br/><br/>Visit Idyll Consults today and explore a world of opportunity.`,
     stack: ["React", "OpenAI API", "Node.js"],
     url: "https://www.idyllconsults.com/"
   },
@@ -46,15 +29,7 @@ const projects = [
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
-    fullDescription: `Giba Medical Clinic is redefining healthcare with cutting-edge therapies:
-    <br/><br/>
-    🔹 Weight Loss Programs <br/>
-    🔹 Hormone Replacement Therapy <br/>
-    🔹 Virtual Consultations <br/>
-    🔹 Direct Primary Care <br/><br/>
-    Also includes a custom admin dashboard to manage users, emails, inquiries, and internal workflows.
-    <br/><br/>
-    Experience the future of wellness with Giba.`,
+    fullDescription: `Giba Medical Clinic is redefining healthcare with cutting-edge therapies:<br/><br/>🔹 Weight Loss Programs <br/>🔹 Hormone Replacement Therapy <br/>🔹 Virtual Consultations <br/>🔹 Direct Primary Care <br/><br/>Also includes a custom admin dashboard to manage users, emails, inquiries, and internal workflows.<br/><br/>Experience the future of wellness with Giba.`,
     stack: ["NextJS", "ExpressJS", "Mongoose"],
     url: "https://gibarestorative.com"
   },
@@ -63,13 +38,7 @@ const projects = [
     name: "LinkOrgNet",
     image: "/images/projects/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD.",
-    fullDescription: `LinkOrg Networks delivers fast, scalable internet across Nigeria, using a mix of fiber optics, radio tech, and satellite solutions.
-    <br/><br/>
-    ⚡ High-Speed <br/>
-    🌍 Global Connectivity <br/>
-    💸 Affordable Plans <br/>
-    💬 Always-On Support <br/><br/>
-    Built to scale with business and residential needs alike.`,
+    fullDescription: `LinkOrg Networks delivers fast, scalable internet across Nigeria, using a mix of fiber optics, radio tech, and satellite solutions.<br/><br/>⚡ High-Speed <br/>🌍 Global Connectivity <br/>💸 Affordable Plans <br/>💬 Always-On Support <br/><br/>Built to scale with business and residential needs alike.`,
     stack: ["React", "Socket.io", "Express API", "Mongoose", "TypeScript"],
     url: "https://linkorgnet.com.ng"
   },
@@ -78,12 +47,7 @@ const projects = [
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
-    fullDescription: `GrowAfrica is preparing for its 2026 launch by gathering interest from shoppers and vendors across the continent.
-    <br/><br/>
-    The landing page features a data collection modal form and an admin dashboard connected to GrowAPI for realtime access.
-    <br/><br/>
-    🌍 Want to shop or sell African products?<br/>
-    Join the movement — for Africans, by Africans.`,
+    fullDescription: `GrowAfrica is preparing for its 2026 launch by gathering interest from shoppers and vendors across the continent.<br/><br/>The landing page features a data collection modal form and an admin dashboard connected to GrowAPI for realtime access.<br/><br/>🌍 Want to shop or sell African products?<br/>Join the movement — for Africans, by Africans.`,
     stack: ["React.js", "Framer Motion", "Vercel", "TypeScript", "Express.js", "Mongoose"],
     url: "https://growafrica.vercel.app"
   },
@@ -97,7 +61,6 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   }
 ];
-
 
 export const FeaturedProjects: React.FC = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
@@ -140,7 +103,10 @@ export const FeaturedProjects: React.FC = () => {
               <Image src={activeProject.image} alt={activeProject.name} fill className={styles.modalImage} />
             </div>
             <h3>{activeProject.name}</h3>
-            <p>{activeProject.fullDescription}</p>
+            <div
+              className={styles.modalDescription}
+              dangerouslySetInnerHTML={{ __html: activeProject.fullDescription }}
+            />
             <ul className={styles.stackList}>
               {activeProject.stack.map((tech) => (
                 <li key={tech}>{tech}</li>
