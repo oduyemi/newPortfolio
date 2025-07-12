@@ -5,6 +5,16 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Projects.module.css";
 
+type Project = {
+  id: number;
+  name: string;
+  image: string;
+  description: string;
+  fullDescription: string;
+  stack: string[];
+  url: string;
+};
+
 const projects = [
   {
     id: 1,
