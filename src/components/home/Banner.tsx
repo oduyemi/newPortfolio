@@ -17,7 +17,7 @@ export const Banner: React.FC = () => {
   return (
     <>
    <div className="h-16" />
-    <section className="relative w-full pt-[40px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+    <section className="relative w-full pt-[60px] bg-gradient-to-b from-gray-50 to-white overflow-hidden">
       {/* Subtle grid background */}
       <div className="relative z-0 opacity-10">
         <div className="relative bg-[url('/images/grid.jpg')] bg-center [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)]" />
@@ -80,7 +80,7 @@ export const Banner: React.FC = () => {
   transition={{ duration: 0.6, ease: "easeOut" }}
   className="relative h-[250px] lg:h-[300px] flex items-center justify-center"
 >
-  <div className="relative top-[-70%] lg:top-0 left-[7%] -translate-x-1/2 h-48 w-48 lg:h-60 lg:w-60 group hero">
+  <div className="relative top-[-70%] lg:top-0 left-[7%] -translate-x-1/2 h-60 w-60 lg:h-72 lg:w-72 group hero">
     {/* Glow layer */}
     <div className="rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 opacity-20 blur-xl w-full h-full group-hover:opacity-30 transition-opacity duration-300" />
 
@@ -90,8 +90,8 @@ export const Banner: React.FC = () => {
         <Image
           src="/images/me.png"
           alt="Portrait"
-          width={260}
-          height={260}
+          width={360}
+          height={360}
           className="object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
           priority
         />
