@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Projects.module.css";
+import Link from "next/link";
+import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 type Project = {
   id: number;
@@ -73,6 +76,7 @@ const projects = [
 ];
 
 export const FeaturedProjects: React.FC = () => {
+    const router = useRouter();
   const [activeProject, setActiveProject] = useState<Project | null>(null);
 
   return (
@@ -98,6 +102,27 @@ export const FeaturedProjects: React.FC = () => {
             </div>
           </motion.div>
         ))}
+      </div>
+      <div className={styles.ctaContainer} style={{ textAlign: "center", marginTop: "10px"}}>
+        <Link href="/projects" className={styles.projectCta}>
+            <motion.button
+                whileHover={{ scale: 1.05, rotate: 1 }}
+                whileTap={{ scale: 0.95, rotate: -1 }}
+                onClick={() => router.push("/projects")}
+                style={{
+                backgroundColor: "#111",
+                color: "#fff",
+                padding: "0.75rem 1.5rem",
+                borderRadius: "999px",
+                border: "none",
+                fontSize: "0.95rem",
+                fontWeight: 500,
+                cursor: "pointer",
+                }}
+            >
+                View Full Project Gallery ↗
+            </motion.button>
+        </Link>
       </div>
 
       {activeProject && (
