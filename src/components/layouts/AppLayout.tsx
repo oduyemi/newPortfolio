@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "sonner";
 import { Header } from "../navigation/Header";
+import { WhatsAppChatButton } from "../LiveChat";
 
 // ~ ======= Create query client -->
 const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ const AppLayout: React.FC<LayoutProps> = ({ children, ...props }) => {
           <Header />
           <div className="h-20"> </div>
           {children}
+          <WhatsAppChatButton />
           <Toaster richColors position="bottom-right" />
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
