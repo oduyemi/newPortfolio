@@ -12,6 +12,7 @@ import {
   Phone,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { easeOut } from "framer-motion";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -20,6 +21,9 @@ import {
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
+
+
+
 
 export const Header: React.FC = () => {
   const router = useRouter();
@@ -37,13 +41,13 @@ export const Header: React.FC = () => {
   });
 
   const navItemVariants = {
-    hidden: { opacity: 0, y: 5 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.3, ease: "easeOut" },
-    },
-  };
+  hidden: { opacity: 0, y: 5 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.3, ease: easeOut },
+  },
+};
 
   const containerVariants = {
     hidden: { opacity: 0 },
