@@ -139,7 +139,8 @@ export const Banner: React.FC = () => {
           transition={{ delay: 0.4 }}
           className="mt-[-3%] col-span-1 lg:col-span-3 text-center text-gray-500 text-sm font-light italic"
         >
-          "Turning complex problems into elegant, maintainable solutions"
+          &ldquo;Turning complex problems into elegant, maintainable solutions&rdquo;
+
         </motion.p>
       </div>
     </section>

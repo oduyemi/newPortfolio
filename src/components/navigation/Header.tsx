@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import useWindowScroll from "beautiful-react-hooks/useWindowScroll";
 import {
@@ -24,7 +23,6 @@ import { cn } from "@/lib/utils";
 
 export const Header: React.FC = () => {
   const router = useRouter();
-  const { setTheme, theme } = useTheme();
   const onWindowScroll = useWindowScroll();
   const [scrollY, setScrollY] = useState(0);
   const [mounted, setMounted] = useState(false);
