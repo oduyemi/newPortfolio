@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden !important;
+  /* background-color: #000;
+  color: #ccc !important; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;      /* white */
+    --foreground: 0 0% 23%;       /* #3a3a3a */
+    --primary: 0 0% 23%;          /* #3a3a3a */
+    --primary-foreground: 0 0% 100%; /* white, for text on primary buttons */
+    --card: 0 0% 98%;             /* very light gray for cards */
+    --card-foreground: 0 0% 23%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 23%;
+    --secondary: 0 0% 70%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 0 0% 60%;
+    --accent-foreground: 0 0% 100%;
+     --button-base: 0 0% 7%;            /* rich black */
+  --button-base-foreground: 0 0% 100%; /* white text */
+  --button-hover: 0 0% 30%;            /* slightly lighter */
+  --button-hover-foreground: 0 0% 100%; /* white */
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+    --destructive: 0 0% 20%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 85%;
+    --input: 0 0% 95%;
+    --ring: 0 0% 23%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 23%;
+    --sidebar-primary: 0 0% 23%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 0 0% 23%;
+  }
+}
+
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(100%);
+  }
+  20%,
+  25% {
+    transform: translateY(0);
+  }
+  45%,
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.animate-scroll-vertical {
+  animation: scrollVertical 8s infinite;
+}
+
+
+.python {
+  padding-left: 100px;
+}
+
+.typescript {
+  padding-right: 200px;
+}
+
+.bringdown {
+  position: relative;
+  top: -50% !important;
+}
+
+@media (max-width: 768px) {
+  .python {
+    padding-left: 5px;
+  }
+  .typescript {
+    padding-right: 10px;
+    margin-top: -80% !important;
+  }
+  .hero {
+    position: relative;
+    left: 34% !important;
+    top: -65%
+  }
+  .mvup {
+    margin-top: -5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .compact .text-5xl {
+    font-size: 2rem !important; /* Reduce size */
+  }
+
+  .compact .text-lg {
+    font-size: 0.875rem !important;
+  }
+
+  .compact .h-96,
+  .compact .w-96 {
+    height: 9rem !important;
+    width: 9rem !important;
+  }
+
+  .compact pre {
+    font-size: 0.65rem !important;
+  }
+
+  .compact .space-y-6 > * {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .compact .mt-16 {
+    margin-top: 1rem !important;
+  }
+}
