@@ -257,10 +257,13 @@ body {
   }
 
   .header {
-    padding: 1.2rem .01rem;
+    padding: 1.2rem 1.2rem;
   }
   .logo img{
     margin-top: -11%;
+  }
+  .hide{
+    display: none;
   }
 }
 
