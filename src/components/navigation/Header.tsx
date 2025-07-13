@@ -20,6 +20,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 
 
 
@@ -71,31 +72,46 @@ export const Header: React.FC = () => {
         <a href="https://github.com/oduyemi" target="_blank" rel="noopener noreferrer">
           <Button variant="outline">GitHub Profile</Button>
         </a>
-        <a href="https://github.com/oduyemi" target="_blank" rel="noopener noreferrer">
+        <a href="https://portal/oduyemi.dev" target="_blank" rel="noopener noreferrer">
           <Button variant="monochrome">Project Portal</Button>
         </a>
-
         <DropdownMenu>
-          <DropdownMenuContent>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline">More</Button>
+          </DropdownMenuTrigger>
+
+          <DropdownMenuContent className="custom-dropdown">
             <DropdownMenuGroup>
-              <DropdownMenuItem onClick={() => router.push("/faqs")}>
-                <Info size={16} className="mr-2" />
-                FAQs
+              <DropdownMenuItem
+                onClick={() => router.push("/faqs")}
+                className="dropdown-item"
+              >
+                <Info size={18} className="dropdown-icon" />
+                <span>FAQs</span>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => router.push("/updates")}>
-                <Bookmark size={16} className="mr-2" />
-                New Updates
+              <DropdownMenuItem
+                onClick={() => router.push("/updates")}
+                className="dropdown-item"
+              >
+                <Bookmark size={18} className="dropdown-icon" />
+                <span>New Updates</span>
               </DropdownMenuItem>
             </DropdownMenuGroup>
-            <DropdownMenuSeparator />
+
+            <DropdownMenuSeparator className="dropdown-separator" />
+
             <DropdownMenuGroup>
-              <DropdownMenuItem>
-                <Phone size={16} className="mr-2" />
-                Call me
+              <DropdownMenuItem asChild className="dropdown-item">
+                <a href="tel:+2348166336187" className="dropdown-link">
+                  <Phone size={18} className="dropdown-icon" />
+                  <span>Call me</span>
+                </a>
               </DropdownMenuItem>
-              <DropdownMenuItem>
-                <MessageSquareText size={16} className="mr-2" />
-                Leave me a mail
+              <DropdownMenuItem asChild className="dropdown-item">
+                <a href="mailto:hello@oduyemi.dev" className="dropdown-link">
+                  <MessageSquareText size={18} className="dropdown-icon" />
+                  <span>Leave me a mail</span>
+                </a>
               </DropdownMenuItem>
             </DropdownMenuGroup>
           </DropdownMenuContent>
