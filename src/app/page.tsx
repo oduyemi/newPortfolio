@@ -1,7 +1,9 @@
 import { AboutMe } from "@/components/home/AboutMe";
 import { Banner } from "@/components/home/Banner";
 import { MyBlog } from "@/components/home/Blog";
+import { ContactCTA } from "@/components/home/ContactCTA";
 import { FeaturedProjects } from "@/components/home/FeaturedProjects";
+import { ProjectHub } from "@/components/home/ProjectHub";
 import { MySkills } from "@/components/home/Skills";
 import { Testimonials } from "@/components/home/Testimonials";
 export default function Home() {
@@ -24,6 +26,12 @@ export default function Home() {
       </div>
       <div>
         <MyBlog />
+      </div>
+      <div>
+        <ContactCTA />
+      </div>
+      <div>
+        <ProjectHub />
       </div>
     </>
 

@@ -6,6 +6,7 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "sonner";
 import { Header } from "../navigation/Header";
 import { WhatsAppChatButton } from "../LiveChat";
+import { Footer } from "../navigation/Footer";
 
 // ~ ======= Create query client -->
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const AppLayout: React.FC<LayoutProps> = ({ children, ...props }) => {
           <div className="h-20"> </div>
           {children}
           <WhatsAppChatButton />
+          <Footer />
           <Toaster richColors position="bottom-right" />
           <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>

@@ -4,7 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import styles from "./Blog.module.css";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+
+
+
 
 type Blog = {
   id: number;
@@ -407,94 +409,99 @@ To ensure that your web project is void of these issues, ensure that you test yo
 ];
 
 export const MyBlog: React.FC = () => {
-    const router = useRouter()
-    const [activeBlog, setActiveBlog] = useState<Blog | null>(null);
+  const [activeBlog, setActiveBlog] = useState<Blog | null>(null);
 
-    return (
-        <section className={styles.blogSection}>
-        <motion.h2
-            className={styles.heading}
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-        >
-            Scribbles from the Dev Cave 📝
-        </motion.h2>
+  return (
+    <section className={styles.blogSection}>
+      <motion.h2
+        className={styles.heading}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        Scribbles from the Dev Cave 📝
+      </motion.h2>
 
-        <div className={styles.grid}>
-            {blogs.map((blog) => (
+      <div className={styles.grid}>
+        {blogs.map((blog) => (
+          <motion.div
+            key={blog.id}
+            className={styles.card}
+            whileHover={{ scale: 1.02 }}
+            onClick={() => setActiveBlog(blog)}
+          >
+            <Image
+              src={blog.image}
+              alt={blog.title}
+              width={400}
+              height={250}
+              className={styles.image}
+            />
+            <h3>{blog.title}</h3>
+            <p className={styles.meta}>
+              By {blog.author} · {blog.date}
+            </p>
+            <p className={styles.excerpt}>{blog.excerpt}</p>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className={styles.ctaContainer}>
+        <Link href="/projects" className={styles.projectCta}>
+          <motion.button
+            whileHover={{ scale: 1.05, rotate: 1 }}
+            whileTap={{ scale: 0.95, rotate: -1 }}
+          >
+            Go to Blog Page ↗
+          </motion.button>
+        </Link>
+      </div>
+
+      <AnimatePresence>
+        {activeBlog && (
+          <motion.div
+            className={styles.modalOverlay}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setActiveBlog(null)}
+          >
             <motion.div
-                key={blog.id}
-                className={styles.card}
-                whileHover={{ scale: 1.02 }}
-                onClick={() => setActiveBlog(blog)}
+              className={styles.modalContent}
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 50, opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              onClick={(e) => e.stopPropagation()}
             >
-                <Image src={blog.image} alt={blog.title} width={400} height={250} className={styles.image} />
-                <h3>{blog.title}</h3>
-                <p className={styles.meta}>By {blog.author} · {blog.date}</p>
-                <p className={styles.excerpt}>{blog.excerpt}</p>
+              <Image
+                src={activeBlog.image}
+                alt={activeBlog.title}
+                width={600}
+                height={300}
+                className={styles.modalImage}
+              />
+              <h3>{activeBlog.title}</h3>
+              <p className={styles.meta}>
+                By {activeBlog.author} · {activeBlog.date}
+              </p>
+              <div className={styles.content}>
+                {activeBlog.content.split("\n").map((para, i) => (
+                  <p key={i}>{para.trim()}</p>
+                ))}
+              </div>
+              <a
+                href={activeBlog.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.cta}
+              >
+                Read Full Article ↗
+              </a>
             </motion.div>
-            ))}
-        </div>
-        <div className={styles.ctaContainer} style={{ textAlign: "center", marginTop: "14px"}}>
-            <Link href="/projects" className={styles.projectCta}>
-                <motion.button
-                    whileHover={{ scale: 1.05, rotate: 1 }}
-                    whileTap={{ scale: 0.95, rotate: -1 }}
-                    onClick={() => router.push("/blogs")}
-                    style={{
-                    backgroundColor: "#111",
-                    color: "#fff",
-                    padding: "0.75rem 1.5rem",
-                    borderRadius: "999px",
-                    border: "none",
-                    fontSize: "0.95rem",
-                    fontWeight: 500,
-                    cursor: "pointer",
-                    }}
-                >
-                    Go to Blog Page ↗
-                </motion.button>
-            </Link>
-        </div>
-
-        <AnimatePresence>
-            {activeBlog && (
-            <motion.div
-                className={styles.modalOverlay}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setActiveBlog(null)}
-            >
-                <motion.div
-                className={styles.modalContent}
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: 50, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                onClick={(e) => e.stopPropagation()}
-                >
-                <Image src={activeBlog.image} alt={activeBlog.title} width={600} height={300} className={styles.modalImage} />
-                <h3>{activeBlog.title}</h3>
-                <p className={styles.meta}>By {activeBlog.author} · {activeBlog.date}</p>
-                <div className={styles.content}>
-                    {activeBlog.content.split("\n").map((para, i) => (
-                        <p key={i}>{para.trim()}</p>
-                    ))}
-                    </div>
-                <a
-                    href={activeBlog.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.cta}
-                >
-                    Read Full Article ↗
-                </a>
-                </motion.div>
-            </motion.div>
-            )}
-        </AnimatePresence>
-        </section>
-    );
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </section>
+  );
 };
