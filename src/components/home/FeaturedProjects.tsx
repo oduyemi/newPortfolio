@@ -1,11 +1,9 @@
-/* eslint-disable */
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import styles from "./Projects.module.css";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { useRouter } from "next/navigation";
 
 type Project = {
@@ -103,7 +101,7 @@ export const FeaturedProjects: React.FC = () => {
           </motion.div>
         ))}
       </div>
-      <div className={styles.ctaContainer} style={{ textAlign: "center", marginTop: "10px"}}>
+      <div className={styles.ctaContainer} style={{ textAlign: "center", marginTop: "14px"}}>
         <Link href="/projects" className={styles.projectCta}>
             <motion.button
                 whileHover={{ scale: 1.05, rotate: 1 }}

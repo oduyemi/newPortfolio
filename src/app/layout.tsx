@@ -20,7 +20,7 @@ const OpenSans = localFont({
 
 export const metadata: Metadata = {
   title: "Òduyémi | Fullstack Developer",
-  description: "I turn ideas into real-life projects",
+  description: "I turn ideas into real-life products",
 };
 
 export default function RootLayout({
