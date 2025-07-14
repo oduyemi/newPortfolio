@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
-    { href: "/blog", label: "Blog" },
+    { href: "https://oduyemi.hashnode.dev", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
