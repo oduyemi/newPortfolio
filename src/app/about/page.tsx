@@ -1,6 +1,4 @@
 import { AboutHero } from "@/components/about/Hero";
-import { AboutIntro } from "@/components/about/Intro";
-import { AboutSkills } from "@/components/about/Skills";
 import { WhyWorkWithMe } from "@/components/about/WhyMe";
 import { AboutMe } from "@/components/home/AboutMe";
 import { ContactCTA } from "@/components/home/ContactCTA";
