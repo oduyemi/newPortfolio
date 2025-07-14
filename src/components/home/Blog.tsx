@@ -447,12 +447,12 @@ export const MyBlog: React.FC = () => {
       </div>
 
       <div className={styles.ctaContainer}>
-        <Link href="/projects" className={styles.projectCta}>
+        <Link href="https://oduyemi.hashnode.dev" className={styles.projectCta}>
           <motion.button
             whileHover={{ scale: 1.05, rotate: 1 }}
             whileTap={{ scale: 0.95, rotate: -1 }}
           >
-            Go to Blog Page ↗
+            Go to Blog ↗
           </motion.button>
         </Link>
       </div>
