@@ -1,0 +1,17 @@
+.randomSection {
+  background-color: #f0f0f0;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.randomList {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.randomItem:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
