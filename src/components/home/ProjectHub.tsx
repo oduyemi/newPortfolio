@@ -34,7 +34,7 @@ export const ProjectHub: React.FC = () => {
           </motion.a>
 
           <motion.a
-            href="/faq"
+            href="/faqs"
             className={styles.ctaAlt}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
