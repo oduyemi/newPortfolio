@@ -8,16 +8,6 @@ export const AboutMe: React.FC = () => {
   return (
     <section className={styles.aboutSection}>
       <motion.div
-        className={styles.headerContainer}
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-      >
-        <h2 className={styles.aboutHeading}>About Me</h2>
-        <div className={styles.divider} />
-      </motion.div>
-
-      <motion.div
         className={styles.aboutContent}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,7 +20,7 @@ export const AboutMe: React.FC = () => {
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
             <motion.img
-              src="/images/yemi.png"
+              src="/images/profile.jpg"
               alt="Yemi smiling like they just fixed a production bug"
               className={styles.fullProfileImage}
               whileHover={{ scale: 1.03 }}

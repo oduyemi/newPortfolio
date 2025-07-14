@@ -1,3 +1,4 @@
+"use client";
 import { AboutMe } from "@/components/home/AboutMe";
 import { Banner } from "@/components/home/Banner";
 import { MyBlog } from "@/components/home/Blog";
@@ -6,6 +7,8 @@ import { FeaturedProjects } from "@/components/home/FeaturedProjects";
 import { ProjectHub } from "@/components/home/ProjectHub";
 import { MySkills } from "@/components/home/Skills";
 import { Testimonials } from "@/components/home/Testimonials";
+import { motion } from "framer-motion";
+import styles from "@/components/home/About.module.css"
 export default function Home() {
   return (
     <>
@@ -19,6 +22,15 @@ export default function Home() {
         <FeaturedProjects />
       </div>
       <div>
+        <motion.div
+        className={styles.headerContainer}
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <h2 className={styles.aboutHeading}>About Me</h2>
+        <div className={styles.divider} />
+      </motion.div>
         <AboutMe />
       </div>
       <div>
