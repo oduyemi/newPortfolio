@@ -16,7 +16,7 @@ export const AboutHero: React.FC = () => {
     <section className={styles.heroSection}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <h1 className={styles.heading}>Meet Yemi</h1>
+          <h1 className={styles.heading}>Meet Yẹmí</h1>
 
           <p className={`${styles.text} ${styles.subHeading}`}>
             I&apos;m a software developer who thinks semicolons 

@@ -37,7 +37,7 @@ export const AboutMe: React.FC = () => {
             transition={{ delay: 0.4 }}
           >
             <p>
-              Hello! I&apos;m <span className={styles.highlight}>Yemi</span> — a full-stack developer,
+              Hello! I&apos;m <span className={styles.highlight}>Yẹmí</span> — a full-stack developer,
               creative technologist, and part-time button clicker. I specialize in
               building sleek, functional web experiences that behave like they
               drank two cups of espresso.
