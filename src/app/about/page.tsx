@@ -11,15 +11,15 @@ export default function About() {
       <div style={{ marginTop: "20px"}}>
         <AboutHero />
       </div>
-      <div style={{ marginTop: "-20px"}}>
+      <div>
+        <ContactCTA />
+      </div>
+      <div>
         <AboutMe />
       </div>
       <div>
         <WhyWorkWithMe />
       </div>      
-      <div>
-        <ContactCTA />
-      </div>
       <div>
         <ProjectHub />
       </div>
