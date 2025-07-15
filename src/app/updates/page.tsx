@@ -1,6 +1,6 @@
 import { UpdatesHero } from "@/components/updates/Hero";
 import { RecentHighlights } from "@/components/updates/RecentHighlights";
-import { WorkInProgress } from "@/components/updates/WorkInProgress";
+import { WorkInProgress } from "@/components/project/WorkInProgress";
 
 
 

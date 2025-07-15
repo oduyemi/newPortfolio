@@ -2,7 +2,7 @@ import { AboutHero } from "@/components/about/Hero";
 import { WhyWorkWithMe } from "@/components/about/WhyMe";
 import { AboutMe } from "@/components/home/AboutMe";
 import { ContactCTA } from "@/components/home/ContactCTA";
-import { ProjectHub } from "@/components/home/ProjectHub";
+import { ProjectHub } from "@/components/project/ProjectHub";
 
 
 export default function About() {
