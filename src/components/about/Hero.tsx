@@ -91,7 +91,7 @@ export const AboutHero: React.FC = () => {
             title="About video"
           />
           <Image
-            src="/images/dp.jpg"
+            src="/images/new_dp.jpg"
             alt="Office"
             className={styles.img5}
             width={120}

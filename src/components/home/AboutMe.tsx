@@ -20,7 +20,7 @@ export const AboutMe: React.FC = () => {
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
           >
             <motion.img
-              src="/images/profile.jpg"
+              src="/images/dp.jpg"
               alt="Yemi smiling like they just fixed a production bug"
               className={styles.fullProfileImage}
               whileHover={{ scale: 1.03 }}
