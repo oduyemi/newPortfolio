@@ -108,7 +108,7 @@ export const AboutMe: React.FC = () => {
             transition={{ delay: 0.8 }}
           >
             <p>
-              Wanna build something awesome together? Just don&apos;t offer me coffee &hyphen; it knocks me out faster than a power nap on a Monday <Coffee size={18} className={styles.icon} />.
+              Wanna build something awesome together? Just don&apos;t offer me coffee &#8209; it knocks me out faster than a power nap on a Monday <Coffee size={18} className={styles.icon} />.
             </p>
           </motion.div>
         </div>
