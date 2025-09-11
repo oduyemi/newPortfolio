@@ -48,11 +48,11 @@ const projects = [
   },
   {
     id: 5,
-    name: "Novunt",
-    image: "/images/projects/wip/novuntui.png",
-    description: "Investment platform",
-    fullDescription: `Novunt is an innovative financial platform committed to redefining profit-sharing and reward distribution in the investment ecosystem. The incentive program is built on principles of fairness, sustainability, and strategic growth, ensuring equitable benefits for all participants while safeguarding the platform’s profitability. <br/><br/>Currently Enhancing the UI and integrating the API I built for it; NovuntAPI <br/>`,
-    stack: ["React", "OpenAI API", "Node.js", "Express.js", "Mongoose"],
+    name: "Portfolio Website",
+    image: "/images/projects/wip/onoja.png",
+    description: "Official portfolio website for Rachael Onoja.",
+    fullDescription: `Racheal Onoja is a passionate Education Technology Consultant with over 5 years of experience. She helps organizations create strategies, programs, and policies that scale globally and leaves a lasting impact in education technology.`,
+    stack: ["NextJS, Typescript", "Mongoose"],
   },
   {
     id: 6,

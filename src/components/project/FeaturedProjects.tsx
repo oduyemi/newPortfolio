@@ -17,14 +17,23 @@ type Project = {
 };
 
 const projects = [
+  // {
+  //   id: 1,
+  //   name: "Simple Todo Application",
+  //   image: "/images/projects/todospring.jpg",
+  //   description: "Simple and classy task management app.",
+  //   fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.<br/><br/><a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
+  //   stack: ["Java", "Spring Framework"],
+  //   url: "https://github.com/oduyemi/todo"
+  // },
   {
     id: 1,
-    name: "Simple Todo Application",
-    image: "/images/projects/todospring.jpg",
-    description: "Simple and classy task management app.",
-    fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.<br/><br/><a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
-    stack: ["Java", "Spring Framework"],
-    url: "https://github.com/oduyemi/todo"
+    name: "SR Luxuries",
+    image: "/images/projects/srl.png",
+    description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
+    fullDescription: `At SR Luxuries, they don't just sell fashion; they curate an experience. Immerse yourself in a world where bespoke menswear meets cutting-edge technology, offering tailored garments, ready-to-wear pieces, and corporate attire.<br/><br/><a href="https://srluxuries.com" target="_blank">See the Code</a>`,
+    stack: ["NextJS", "Typescript", "Cloudinary", "Mongoose"],
+    url: "https://srluxuries.com"
   },
   {
     id: 2,
@@ -89,14 +98,23 @@ const projects = [
     stack: ["WordPress", "PhP", "MySQL"],
     url: "https://rufaddasmedicalsupplies.com"
   },
+  // {
+  //   id: 9,
+  //   name: "Company website",
+  //   image: "/images/projects/rufaddas.png",
+  //   description: "Official website of Rufaddas Medical.",
+  //   fullDescription: `Rufaddas Medical is devoted to making a, the best medical and care equipment at affordable prices. To discourage fake and substandard products, thereby, reducing mortality rate. At the same time, saving precious resources currently wasted on avoidable health tourism.`,
+  //   stack: ["WordPress", "PhP", "MySQL"],
+  //   url: "https://rufaddasmedicalsupplies.com"
+  // },
   {
     id: 9,
     name: "Company website",
-    image: "/images/projects/rufaddas.png",
-    description: "Official website of Rufaddas Medical.",
-    fullDescription: `Rufaddas Medical is devoted to making a, the best medical and care equipment at affordable prices. To discourage fake and substandard products, thereby, reducing mortality rate. At the same time, saving precious resources currently wasted on avoidable health tourism.`,
-    stack: ["WordPress", "PhP", "MySQL"],
-    url: "https://rufaddasmedicalsupplies.com"
+    image: "/images/projects/white.png",
+    description: "Official website of Sparkling White, UK.",
+    fullDescription: `From residential and commercial properties to industrial sites, our focus is simple: deliver spotless results, ensure peace of mind, and build lasting relationships through trust and quality.`,
+    stack: ["NextJS", "Typescript", "Javascript", "Mongoose"],
+    url: "https://www.sparklingwhitelimited.co.uk/"
   },
   
 ];
@@ -174,7 +192,7 @@ export const FeaturedProjects: React.FC = () => {
               ))}
             </ul>
             <a href={activeProject.url} target="_blank" className={styles.projectLink}>
-              Visit Project ↗
+              Visit Site ↗
             </a>
           </motion.div>
         </div>

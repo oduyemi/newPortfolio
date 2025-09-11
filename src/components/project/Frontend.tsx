@@ -19,24 +19,44 @@ type Project = {
 const projects = [
   {
     id: 1,
+    name: "Company website",
+    image: "/images/projects/white.png",
+    description: "Official website of Sparkling White, UK.",
+    fullDescription: `From residential and commercial properties to industrial sites, our focus is simple: deliver spotless results, ensure peace of mind, and build lasting relationships through trust and quality.`,
+    stack: ["NextJS", "Typescript", "Javascript", "Mongoose"],
+    category: "Frontend",
+    url: "https://www.sparklingwhitelimited.co.uk/"
+  },
+  {
+    id: 2,
+    name: "SR Luxuries",
+    image: "/images/projects/srl.png",
+    description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
+    fullDescription: `At SR Luxuries, they don't just sell fashion; they curate an experience. Immerse yourself in a world where bespoke menswear meets cutting-edge technology, offering tailored garments, ready-to-wear pieces, and corporate attire.<br/><br/><a href="https://srluxuries.com" target="_blank">See the Code</a>`,
+    stack: ["NextJS", "Typescript", "Cloudinary", "Mongoose"],
+    category:"Frontend",
+    url: "https://srluxuries.com"
+  },
+  {
+    id: 3,
     name: "Hustle & Grind",
     image: "/images/projects/frontend/hustle.png",
     description: "Landing page for hacker-house accelerator.",
     fullDescription: `Hustle & Grind delivers a month of intensive growth, mentorship, and fundraising strategy in Lagos.`,
     stack: ["Next.js", "Framer Motion", "TypeScript"],
-    url: "https://hustle.adewaleyusuf.com/"
+    url: "https://hustle-and-grind.vercel.app/"
   },
   {
-    id: 2,
+    id: 4,
     name: "Native Soups",
     image: "/images/projects/frontend/soups.jpg",
     description: "E-commerce demo that caters for supply of indigenous soups.",
     fullDescription: `Native Soups is aimed at helping to improve the availability of quality native cusines, thereby, exploiting & preserving native food & nutritional knowledge, as well as reducing unemployment rate among youths.`,
     stack: ["HTML", "CSS", "JavaScript"],
-    url: "https://www.idyllconsults.com/"
+    url: "https://dynamic-baklava-4abc56.netlify.app/"
   },
   {
-    id: 3,
+    id: 5,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
@@ -45,7 +65,7 @@ const projects = [
     url: "https://gibarestorative.com"
   },
   {
-    id: 4,
+    id: 6,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -54,7 +74,7 @@ const projects = [
     url: "https://www.idyllconsults.com/"
   },
   {
-    id: 5,
+    id: 7,
     name: "LinkOrgNet",
     image: "/images/projects/collabo/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD",
@@ -63,7 +83,7 @@ const projects = [
     url: "https://linkorgnet.com.ng"
   },
   {
-    id: 6,
+    id: 8,
     name: "Artist Portfolio Website",
     image: "/images/projects/abecole.png",
     description: "A digital portfolio for UK-based Nigerian artist, Abraham Cole.",
@@ -72,7 +92,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 7,
+    id: 9,
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
@@ -81,7 +101,7 @@ const projects = [
     url: "https://growafrica.vercel.app"
   },
   {
-    id: 8,
+    id: 10,
     name: "Haut Logistics",
     image: "/images/projects/frontend/haut.png",
     description: "Demo for logistics web application.",
@@ -96,7 +116,7 @@ const projects = [
     url: "https://hautlogistics.vercel.app/"
   },
   {
-    id: 9,
+    id: 11,
     name: "The Churches Online Platform",
     image: "/images/projects/frontend/churches.jpg",
     description: "A religious web platform that help people to connect to local churches online.",
@@ -105,7 +125,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 10,
+    id: 12,
     name: "Musical Empire",
     image: "/images/projects/frontend/musical.png",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -114,7 +134,7 @@ const projects = [
     url: "https://musicalempire.com.ng"
   },
   {
-    id: 11,
+    id: 13,
     name: "Company website",
     image: "/images/projects/frontend/ruf.jpg",
     description: "Official website of Rufaddas Medical.",
@@ -123,13 +143,13 @@ const projects = [
     url: "https://rufaddasmedicalsupplies.com"
   },
   {
-    id: 12,
+    id: 14,
     name: "Company website",
     image: "/images/projects/frontend/urb.jpg",
     description: "Official website of UrBizEdge Limited",
     fullDescription: `UrBizEdge is a registered Microsoft Excel consulting, financial modelling, business intelligence, data analysis and enterprise solutions firm in Nigeria. We specialise in helping companies and high value professionals be on top of their business data.`,
     stack: ["WordPress", "PhP", "MySQL"],
-    url: "https://rufaddasmedicalsupplies.com"
+    url: "https://urbizedge.com"
   }
 ];
 
@@ -207,7 +227,7 @@ export const FrontendProjects: React.FC = () => {
               ))}
             </ul>
             <a href={activeProject.url} target="_blank" className={styles.projectLink}>
-              Visit Project ↗
+              Visit Site ↗
             </a>
           </motion.div>
         </div>

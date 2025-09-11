@@ -17,15 +17,25 @@ type Project = {
 };
 
 const allProjects: Project[] = [
+  // {
+  //   id: 1,
+  //   name: "Hustle & Grind",
+  //   image: "/images/projects/frontend/hustle.png",
+  //   description: "Landing page for hacker-house accelerator.",
+  //   fullDescription: `Hustle & Grind delivers a month of intensive growth, mentorship, and fundraising strategy in Lagos.`,
+  //   stack: ["Next.js", "Framer Motion", "TypeScript"],
+  //   category: "Frontend",
+  //   url: "https://hustle.adewaleyusuf.com/"
+  // },
   {
     id: 1,
-    name: "Hustle & Grind",
-    image: "/images/projects/frontend/hustle.png",
-    description: "Landing page for hacker-house accelerator.",
-    fullDescription: `Hustle & Grind delivers a month of intensive growth, mentorship, and fundraising strategy in Lagos.`,
-    stack: ["Next.js", "Framer Motion", "TypeScript"],
-    category: "Frontend",
-    url: "https://hustle.adewaleyusuf.com/"
+    name: "SR Luxuries",
+    image: "/images/projects/srl.png",
+    description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
+    fullDescription: `At SR Luxuries, they don't just sell fashion; they curate an experience. Immerse yourself in a world where bespoke menswear meets cutting-edge technology, offering tailored garments, ready-to-wear pieces, and corporate attire.<br/><br/><a href="https://srluxuries.com" target="_blank">See the Code</a>`,
+    stack: ["NextJS", "Typescript", "Cloudinary", "Mongoose"],
+    category:"Frontend",
+    url: "https://srluxuries.com"
   },
   {
     id: 2,
@@ -87,18 +97,38 @@ const allProjects: Project[] = [
     category: "Collaborations",
     url: "",
   },
-  {
+  // {
+  //   id: 8,
+  //   name: "Novunt API",
+  //   image: "/images/projects/backend/novunt.png",
+  //   description: "REST API powering the Novunt financial platform.",
+  //   fullDescription: `ProForumAPI is an API designed to provide forum functionality for the ProGrowing mentorship platform. It allows users to create posts, comment on posts, like and dislike posts and comments, and interact with tags.`,
+  //   stack: ["Typescript", "Node.js", "Express", "Nodemon", "Mongoose"],
+  //   category: "Backend",
+  //   url: ""
+  // },
+   {
     id: 8,
-    name: "Novunt API",
-    image: "/images/projects/backend/novunt.png",
-    description: "REST API powering the Novunt financial platform.",
-    fullDescription: `ProForumAPI is an API designed to provide forum functionality for the ProGrowing mentorship platform. It allows users to create posts, comment on posts, like and dislike posts and comments, and interact with tags.`,
-    stack: ["Typescript", "Node.js", "Express", "Nodemon", "Mongoose"],
-    category: "Backend",
-    url: ""
+    name: "Company website",
+    image: "/images/projects/white.png",
+    description: "Official website of Sparkling White, UK.",
+    fullDescription: `From residential and commercial properties to industrial sites, our focus is simple: deliver spotless results, ensure peace of mind, and build lasting relationships through trust and quality.`,
+    stack: ["NextJS", "Typescript", "Javascript", "Mongoose"],
+    category: "Frontend",
+    url: "https://www.sparklingwhitelimited.co.uk/"
   },
   {
     id: 9,
+    name: "Portfolio Website",
+    image: "/images/projects/wip/onoja.png",
+    description: "Official portfolio website for Rachael Onoja.",
+    fullDescription: `Racheal Onoja is a passionate Education Technology Consultant with over 5 years of experience. She helps organizations create strategies, programs, and policies that scale globally and leaves a lasting impact in education technology.`,
+    stack: ["NextJS", "Typescript", "Mongoose"],
+    category: "Work in Progress",
+    url: ""
+  },
+  {
+    id: 10,
     name: "Customer Portal for LinkOrgNet",
     image: "/images/projects/wip/lportal.png",
     description: "Client/admin/Account portal: A PWA",
@@ -108,7 +138,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 10,
+    id: 11,
     name: "Project Portal",
     image: "/images/projects/wip/portallanding.png",
     description: "Collaboration hub for project communication and updates.",
@@ -118,7 +148,7 @@ const allProjects: Project[] = [
     url: "https://portal.oduyemi.dev",
   },
   {
-    id: 11,
+    id: 12,
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
@@ -128,7 +158,7 @@ const allProjects: Project[] = [
     url: "https://growafrica.vercel.app",
   },
   {
-    id: 12,
+    id: 13,
     name: "Simple Todo Application",
     image: "/images/projects/todospring.jpg",
     description: "Simple and classy task management app.",
@@ -138,7 +168,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 13,
+    id: 14,
     name: "Company website",
     image: "/images/projects/frontend/urb.jpg",
     description: "Official website of UrBizEdge Limited",
@@ -148,7 +178,7 @@ const allProjects: Project[] = [
     url: "https://urbizedge.com"
   },
   {
-    id: 14,
+    id: 15,
     name: "Bridal Fabrics",
     image: "/images/projects/collabo/fabrics.jpg",
     description: "Fashion store.",
@@ -158,7 +188,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 15,
+    id: 16,
     name: "ChatBot",
     image: "/images/projects/backend/chatbt.png",
     description: "AI Chat bot",
@@ -168,7 +198,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 16,
+    id: 17,
     name: "Celsza",
     image: "/images/projects/collabo/celza.jpg",
     description: "Church website.",
@@ -178,7 +208,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 17,
+    id: 18,
     name: "FilmHouse API",
     image: "/images/projects/backend/filmhouse.png",
     description: "API that maintains the records of all movies for a sales and rental movie business. Powered by Python FastAPI",
@@ -188,7 +218,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 18,
+    id: 19,
     name: "Locale",
     image: "/images/projects/collabo/localeHome.jpg",
     description: "Frontend for an API.",
@@ -198,7 +228,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 19,
+    id: 20,
     name: "ProForum API",
     image: "/images/projects/backend/proforum.png",
     description: "API for a forum to be integrated into the ProGrowing mentorship platform.",
@@ -208,7 +238,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 20,
+    id: 21,
     name: "LinkOrgAPI",
     image: "/images/projects/backend/linkorg.png",
     description: "API for managing administrative actions, user authentication, session handling, and error handling.",
@@ -218,7 +248,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 21,
+    id: 22,
     name: "Preschool",
     image: "/images/projects/wip/preschool.jpg",
     description: "Frontend application for a creche: A web application with Pre-School API integration",
@@ -228,7 +258,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 22,
+    id: 23,
     name: "GrowAPI",
     image: "/images/projects/backend/presch.png",
     description: "Backend for Grow Africa Landing page to collect waitlist for landing page's form input. Basically gathering user data.",
@@ -238,7 +268,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 23,
+    id: 24,
     name: "Project Hub",
     image: "/images/projects/wip/portallanding.png",
     description: "My project hub. As a fullstack developer/product manager, I am coming up with a task management/project tracker tool for my clients",
@@ -248,7 +278,7 @@ const allProjects: Project[] = [
     url: ""
   }, 
   {
-    id: 24,
+    id: 25,
     name: "Pre-School API",
     image: "/images/projects/backend/presch.png",
     description: "API that maintains the records of all students in a private Daycare center.",
@@ -258,7 +288,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 25,
+    id: 26,
     name: "LinkOrg VoIP",
     image: "/images/projects/wip/linkorgvoip.png",
     description: "Fullstack E-commerce Application/VoIP Platform",
@@ -268,7 +298,7 @@ const allProjects: Project[] = [
     url: "https://staging.linkorgnet.com.ng",
   }, 
   {
-    id: 26,
+    id: 27,
     name: "Scissor",
     image: "/images/projects/backend/scissorapi.jpg",
     description: "Link shortner",
@@ -278,7 +308,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 27,
+    id: 28,
     name: "Haut Logistics",
     image: "/images/projects/frontend/haut.png",
     description: "Demo for logistics web application.",
@@ -294,7 +324,7 @@ const allProjects: Project[] = [
     url: "https://hautlogistics.vercel.app/"
   },
   {
-    id: 28,
+    id: 29,
     name: "Schedula",
     image: "/images/projects/backend/schedula.png",
     description: "Backend for Schedula; a to-do web application",
@@ -304,7 +334,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 29,
+    id: 30,
     name: "ChatBot",
     image: "/images/projects/backend/chatbt.png",
     description: "AI Chat bot",
@@ -314,7 +344,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 30,
+    id: 31,
     name: "Native Soups",
     image: "/images/projects/frontend/soups.jpg",
     description: "E-commerce demo that caters for supply of indigenous soups.",
@@ -324,7 +354,7 @@ const allProjects: Project[] = [
     url: "https://dynamic-baklava-4abc56.netlify.app/",
   },
   {
-    id: 31,
+    id: 32,
     name: "VerifyAPI",
     image: "/images/projects/backend/verify.png",
     description: "A product authentication backend for Verify",
@@ -334,7 +364,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 32,
+    id: 33,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -344,7 +374,7 @@ const allProjects: Project[] = [
     url: "https://www.idyllconsults.com/",
   },
   {
-    id: 33,
+    id: 34,
     name: "Novunt API",
     image: "/images/projects/backend/novunt.png",
     description: "API for a forum to be integrated into the ProGrowing mentorship platform.",
@@ -354,7 +384,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 34,
+    id: 35,
     name: "The Churches Online Platform",
     image: "/images/projects/frontend/churches.jpg",
     description: "A religious web platform that help people to connect to local churches online.",
@@ -364,7 +394,7 @@ const allProjects: Project[] = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 35,
+    id: 36,
     name: "Kofoworola Alasooke",
     image: "/images/projects/wip/alaso.png",
     description: "E-commerce web application for Fashion icon.",
@@ -374,7 +404,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 36,
+    id: 37,
     name: "Company website",
     image: "/images/projects/frontend/ruf.jpg",
     description: "Official website of Rufaddas Medical.",
@@ -384,7 +414,7 @@ const allProjects: Project[] = [
     url: "https://rufaddasmedicalsupplies.com"
   },
   {
-    id: 37,
+    id: 38,
     name: "Chop Beta",
     image: "/images/projects/toy/chopbeta.jpg",
     description: "A food-seller app",
@@ -394,7 +424,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 38,
+    id: 39,
     name: "Musical Empire",
     image: "/images/projects/frontend/musical.png",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -404,7 +434,7 @@ const allProjects: Project[] = [
     url: "https://musicalempire.com.ng",
   },
   {
-    id: 39,
+    id: 40,
     name: "Chow",
     image: "/images/projects/toy/chow.jpg",
     description: "Restaurant App",
@@ -414,7 +444,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 40,
+    id: 41,
     name: "Dev Quiz",
     image: "/images/projects/toy/devquiz.png",
     description: "Restaurant App",
@@ -424,7 +454,7 @@ const allProjects: Project[] = [
     url: "https://dev-quiz-tan.vercel.app/"
   },
   {
-    id: 41,
+    id: 42,
     name: "Insider Insights",
     image: "/images/projects/toy/insider.png",
     description: "Business/job review insights",
@@ -434,7 +464,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 42,
+    id: 43,
     name: "LinkedIn Clone",
     image: "/images/projects/toy/lclone.png",
     description: "A clone of LinkedIn homepage",
@@ -444,7 +474,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 43,
+    id: 44,
     name: "Instagram Clone",
     image: "/images/projects/toy/clone.jpg",
     description: "Instagram clone",
@@ -454,7 +484,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 44,
+    id: 45,
     name: "Schedula",
     image: "/images/projects/toy/schedula.jpg",
     description: "A to-do web application",
@@ -464,7 +494,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 45,
+    id: 46,
     name: "TechGPT (ChatGPT Clone)",
     image: "/images/projects/toy/techgpt.png",
     description: "A creative clone of ChatGPT",
@@ -474,7 +504,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 46,
+    id: 47,
     name: "Techie",
     image: "/images/projects/toy/techie.jpg",
     description: "Multi-user blog",
@@ -484,7 +514,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 47,
+    id: 48,
     name: "Locale",
     image: "/images/projects/toy/locale.png",
     description: "Geographical developer tool",
@@ -494,7 +524,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 48,
+    id: 49,
     name: "Vortex",
     image: "/images/projects/toy/vortex.jpg",
     description: "YouTube Video Downloader",
@@ -504,7 +534,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 49,
+    id: 50,
     name: "Todomatic",
     image: "/images/projects/toy/todoshi.png",
     description: "Task management application",
