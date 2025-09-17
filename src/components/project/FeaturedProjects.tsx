@@ -42,7 +42,7 @@ const projects = [
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
     fullDescription: `Giba Medical Clinic is redefining healthcare with cutting-edge therapies:<br/><br/>🔹 Weight Loss Programs <br/>🔹 Hormone Replacement Therapy <br/>🔹 Virtual Consultations <br/>🔹 Direct Primary Care <br/><br/>Also includes a custom admin dashboard to manage users, emails, inquiries, and internal workflows.<br/><br/>Experience the future of wellness with Giba.`,
     stack: ["NextJS", "ExpressJS", "Mongoose", "IntakeQ Client API"],
-    url: "https://gibarestorative.com"
+    url: "https://gibarestorative.vercel.app"
   },
   {
     id: 3,
