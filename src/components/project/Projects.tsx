@@ -88,7 +88,7 @@ const allProjects: Project[] = [
     fullDescription: `Giba Medical Clinic is redefining healthcare with cutting-edge therapies:<br/><br/>🔹 Weight Loss Programs <br/>🔹 Hormone Replacement Therapy <br/>🔹 Virtual Consultations <br/>🔹 Direct Primary Care <br/><br/>Also includes a custom admin dashboard to manage users, emails, inquiries, and internal workflows.<br/><br/>Experience the future of wellness with Giba.`,
     stack: ["NextJS", "ExpressJS", "Mongoose", "IntakeQ Client API"],
     category: "Frontend",
-    url: "https://gibarestore.vercel.app",
+    url: "https://gibarestorative.vercel.app",
   },
   {
     id: 8,
