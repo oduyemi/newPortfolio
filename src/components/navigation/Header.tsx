@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
-    { href: "https://oduyemi.hashnode.dev", label: "Blog" },
+    { href: "https://oduyemi.hashnode.dev", external: true, label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -61,11 +61,23 @@ export const Header: React.FC = () => {
       </div>
 
       <div className="header-center">
-        {navItems.map((item) => (
-          <Link key={item.href} href={item.href} className="nav-link">
-            {item.label}
-          </Link>
-        ))}
+        {navItems.map((item) =>
+          item.external ? (
+            <a
+              key={item.href}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link"
+            >
+              {item.label}
+            </a>
+          ) : (
+            <Link key={item.href} href={item.href} className="nav-link">
+              {item.label}
+            </Link>
+          )
+        )}
       </div>
 
       <div className="header-right">
