@@ -1,23 +1,27 @@
 "use client";
-
 import * as React from "react";
-import { motion } from "framer-motion";
+import { motion, easeOut, type Variants } from "framer-motion";
 import { Check, Loader2, Dot } from "lucide-react";
 import { cn } from "@/lib/utils";
 import styles from "./RecentHighlights.module.css";
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 12 },
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 12,
+  },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
     transition: {
       delay: i * 0.12,
       duration: 0.4,
-      ease: "easeOut",
+      ease: easeOut,
     },
   }),
 };
+
 
 export const RecentHighlights: React.FC = () => {
   return (
