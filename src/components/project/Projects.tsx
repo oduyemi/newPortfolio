@@ -60,6 +60,16 @@ const allProjects: Project[] = [
   },
   {
     id: 5,
+    name: "ProLearn",
+    image: "/images/projects/wip/learn.jpg",
+    description: "A learning management system for ProGrowing",
+    fullDescription: `Version 2 of the ProGrowing Learn application. A learning management system for the ProGrowing community.`,
+    stack: ["NextJs", "Typescript", "Mongoose"],
+    category: "Work in Progress",
+    url: "https://learn.progrowing.org",
+  },
+  {
+    id: 6,
     name: "BriteBatch",
     image: "/images/projects/backend/britebatch.png",
     description:
@@ -70,7 +80,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 6,
+    id: 7,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description:
@@ -81,7 +91,7 @@ const allProjects: Project[] = [
     url: "https://gibarestorative.vercel.app",
   },
   {
-    id: 7,
+    id: 8,
     name: "Artist Portfolio Website",
     image: "/images/projects/abecole.png",
     description:
@@ -92,7 +102,7 @@ const allProjects: Project[] = [
     url: "https://abrahamcole.vercel.app",
   },
   {
-    id: 8,
+    id: 9,
     name: "Law X Tech",
     image: "/images/projects/collabo/lawxtech.jpg",
     description: "Website for NGO",
@@ -102,7 +112,7 @@ const allProjects: Project[] = [
     url: "https://lawxtech.org/",
   },  
   {
-    id: 9,
+    id: 10,
     name: "LinkOrgNet",
     image: "/images/projects/collabo/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD",
@@ -112,7 +122,7 @@ const allProjects: Project[] = [
     url: "https://linkorgnet.com.ng",
   },
   {
-    id: 10,
+    id: 11,
     name: "Orphelinat NAFO",
     image: "/images/projects/frontend/nafo.jpeg",
     description: "Site officiel de l'Association Nafo",
@@ -122,7 +132,7 @@ const allProjects: Project[] = [
     url: "https://nafo.vercel.app",
   },
   {
-    id: 11,
+    id: 12,
     name: "Fitness Guide",
     image: "/images/projects/collabo/fit.jpg",
     description: "A fitness Evaluation web application",
@@ -132,7 +142,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 12,
+    id: 13,
     name: "Company website",
     image: "/images/projects/white.png",
     description: "Official website of Sparkling White, UK.",
@@ -142,28 +152,18 @@ const allProjects: Project[] = [
     url: "https://www.sparklingwhitelimited.co.uk/",
   },
   {
-    id: 13,
+    id: 14,
     name: "Portfolio Website",
     image: "/images/projects/wip/onoja.png",
     description: "Official portfolio website for Rachael Onoja.",
     fullDescription: `Racheal Onoja is a passionate Education Technology Consultant...`,
     stack: ["NextJS", "Typescript", "Mongoose"],
-    category: "Work in Progress",
-    url: "",
-  },
-  {
-    id: 14,
-    name: "Customer Portal for LinkOrgNet",
-    image: "/images/projects/wip/lportal.png",
-    description: "Client/admin/Account portal: A PWA",
-    fullDescription: `This project is a teamwork of the software department of LinkOrg Networks...`,
-    stack: ["NextJS", "ExpressJS", "Python", "FastAPI", "PostGresDB"],
-    category: "Work in Progress",
-    url: "",
+    category: "Frontend",
+    url: "https://rachealonoja.vercel.app",
   },
   {
     id: 15,
-    name: "Project Portal",
+    name: "Project Hub",
     image: "/images/projects/wip/portallanding.png",
     description:
       "Collaboration hub for project communication and updates.",
@@ -295,16 +295,6 @@ const allProjects: Project[] = [
   },
   {
     id: 28,
-    name: "Project Hub",
-    image: "/images/projects/wip/portallanding.png",
-    description: "My project hub. As a fullstack developer/product manager, I am coming up with a task management/project tracker tool for my clients",
-    fullDescription: `A web based project portal that would serve as a central communication hub between myself and my clients, where my clients can share media files as regards their project and track it’s progress.`,
-    stack: ["NextJS", "NestJS", "Node", "MongoDB", "Cloudinary", "Socket.io"],
-    category: "Work in Progress",
-    url: ""
-  }, 
-  {
-    id: 29,
     name: "Pre-School API",
     image: "/images/projects/backend/presch.png",
     description: "API that maintains the records of all students in a private Daycare center.",
@@ -314,17 +304,17 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 30,
+    id: 29,
     name: "LinkOrg VoIP",
     image: "/images/projects/wip/linkorgvoip.png",
     description: "Fullstack E-commerce Application/VoIP Platform",
     fullDescription: `VoIP platform . Built with Next.js 14 and integrating with ProVu's telecom infrastructure for real-time VoIP provisioning and management.<br/><br/>`,
     stack: ["Next.js14", "TypeScript", "TanStack Query", "Zustand", "Stripe", "ProVu API", "ByComsAPI", "ExpressJS", "NeonAPI"],
-    category: "Work in Progress",
+    category: "Frontend",
     url: "https://staging.linkorgnet.com.ng",
   }, 
   {
-    id: 31,
+    id: 30,
     name: "Scissor",
     image: "/images/projects/backend/scissorapi.jpg",
     description: "Link shortner",
@@ -334,7 +324,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 32,
+    id: 31,
     name: "Haut Logistics",
     image: "/images/projects/frontend/haut.png",
     description: "Demo for logistics web application.",
@@ -350,7 +340,7 @@ const allProjects: Project[] = [
     url: "https://hautlogistics.vercel.app/"
   },
   {
-    id: 33,
+    id: 32,
     name: "Schedula",
     image: "/images/projects/backend/schedula.png",
     description: "Backend for Schedula; a to-do web application",
@@ -360,7 +350,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 34,
+    id: 33,
     name: "ChatBot",
     image: "/images/projects/backend/chatbt.png",
     description: "AI Chat bot",
@@ -370,7 +360,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 35,
+    id: 34,
     name: "Native Soups",
     image: "/images/projects/frontend/soups.jpg",
     description: "E-commerce demo that caters for supply of indigenous soups.",
@@ -380,7 +370,7 @@ const allProjects: Project[] = [
     url: "https://dynamic-baklava-4abc56.netlify.app/",
   },
   {
-    id: 36,
+    id: 35,
     name: "VerifyAPI",
     image: "/images/projects/backend/verify.png",
     description: "A product authentication backend for Verify",
@@ -390,7 +380,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 37,
+    id: 36,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -400,7 +390,7 @@ const allProjects: Project[] = [
     url: "https://www.idyllconsults.com/",
   },
   {
-    id: 38,
+    id: 37,
     name: "Novunt API",
     image: "/images/projects/backend/novunt.png",
     description: "API for a forum to be integrated into the ProGrowing mentorship platform.",
@@ -410,7 +400,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 39,
+    id: 38,
     name: "The Churches Online Platform",
     image: "/images/projects/frontend/churches.jpg",
     description: "A religious web platform that help people to connect to local churches online.",
@@ -420,7 +410,7 @@ const allProjects: Project[] = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 40,
+    id: 39,
     name: "Kofoworola Alasooke",
     image: "/images/projects/wip/alaso.png",
     description: "E-commerce web application for Fashion icon.",
@@ -430,7 +420,7 @@ const allProjects: Project[] = [
     url: "",
   },
   {
-    id: 41,
+    id: 40,
     name: "Company website",
     image: "/images/projects/frontend/ruf.jpg",
     description: "Official website of Rufaddas Medical.",
@@ -440,7 +430,7 @@ const allProjects: Project[] = [
     url: "https://rufaddasmedicalsupplies.com"
   },
   {
-    id: 42,
+    id: 41,
     name: "Chop Beta",
     image: "/images/projects/toy/chopbeta.jpg",
     description: "A food-seller app",
@@ -450,7 +440,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 43,
+    id: 42,
     name: "Musical Empire",
     image: "/images/projects/frontend/musical.png",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -460,7 +450,7 @@ const allProjects: Project[] = [
     url: "https://musicalempire.com.ng",
   },
   {
-    id: 44,
+    id: 43,
     name: "Chow",
     image: "/images/projects/toy/chow.jpg",
     description: "Restaurant App",
@@ -470,7 +460,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 45,
+    id: 44,
     name: "Dev Quiz",
     image: "/images/projects/toy/devquiz.png",
     description: "Restaurant App",
@@ -480,7 +470,7 @@ const allProjects: Project[] = [
     url: "https://dev-quiz-tan.vercel.app/"
   },
   {
-    id: 46,
+    id: 45,
     name: "Insider Insights",
     image: "/images/projects/toy/insider.png",
     description: "Business/job review insights",
@@ -490,7 +480,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 47,
+    id: 46,
     name: "LinkedIn Clone",
     image: "/images/projects/toy/lclone.png",
     description: "A clone of LinkedIn homepage",
@@ -500,7 +490,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 48,
+    id: 47,
     name: "Instagram Clone",
     image: "/images/projects/toy/clone.jpg",
     description: "Instagram clone",
@@ -510,7 +500,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 49,
+    id: 48,
     name: "Schedula",
     image: "/images/projects/toy/schedula.jpg",
     description: "A to-do web application",
@@ -520,7 +510,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 50,
+    id: 49,
     name: "TechGPT (ChatGPT Clone)",
     image: "/images/projects/toy/techgpt.png",
     description: "A creative clone of ChatGPT",
@@ -530,7 +520,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 51,
+    id: 50,
     name: "Techie",
     image: "/images/projects/toy/techie.jpg",
     description: "Multi-user blog",
@@ -540,7 +530,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 52,
+    id: 51,
     name: "Locale",
     image: "/images/projects/toy/locale.png",
     description: "Geographical developer tool",
@@ -550,7 +540,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 53,
+    id: 52,
     name: "Vortex",
     image: "/images/projects/toy/vortex.jpg",
     description: "YouTube Video Downloader",
@@ -560,7 +550,7 @@ const allProjects: Project[] = [
     url: ""
   },
   {
-    id: 54,
+    id: 53,
     name: "Todomatic",
     image: "/images/projects/toy/todoshi.png",
     description: "Task management application",

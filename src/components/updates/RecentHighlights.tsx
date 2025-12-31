@@ -1,36 +1,131 @@
 "use client";
-import React from "react";
+
+import * as React from "react";
+import { motion } from "framer-motion";
+import { Check, Loader2, Dot } from "lucide-react";
+import { cn } from "@/lib/utils";
 import styles from "./RecentHighlights.module.css";
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 12 },
+  show: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.12,
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  }),
+};
 
 export const RecentHighlights: React.FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Recent Highlights</h2>
+        <header className={styles.header}>
+          <h2 className={styles.title}>Recent Highlights</h2>
+          <p className={styles.intro}>
+            A short progression of what’s live, what’s evolving, and what’s next
+            within the ProGrowing ecosystem.
+          </p>
+        </header>
+
         <ul className={styles.list}>
-          <li className={styles.item}>
-            <h3 className={styles.subtitle}>🚧 Project Portal is Coming Soon</h3>
-            <p className={styles.description}>
-              I&apos;m currently building a 
-              full-featured web-based client portal. 
-              It will serve as a hub for project 
-              collaboration — clients can share files, 
-              track milestones, and get real-time updates. 
-              Think of it as a communication bridge 
-              that eliminates email chaos.
-            </p>
-          </li>
-          <li className={styles.item}>
-            <h3 className={styles.subtitle}>🌱 ProGrowing Initiative</h3>
-            <p className={styles.description}>
-              I&apos;ve launched <strong>ProGrowing</strong>, 
-              a mentorship & upskilling initiative tailored 
-              for devs navigating early-career confusion. It&apos;s 
-              my small way of supporting those who are 
-              committed — no handholding, just honest, 
-              growth-focused sessions.
-            </p>
-          </li>
+          {/* COMPLETED */}
+          <motion.li
+            custom={0}
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={styles.item}
+          >
+            <span className={styles.iconCompleted}>
+              <Check size={14} />
+            </span>
+
+            <div className={styles.content}>
+              <h3 className={styles.subtitle}>
+                ProGrowing Umbrella Platform
+              </h3>
+              <p className={styles.description}>
+                The core ProGrowing platform is complete and deployed. It serves
+                as the foundation that ties the entire ecosystem together.
+              </p>
+
+              <a
+                href="https://progrowing.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                progrowing.org →
+              </a>
+            </div>
+          </motion.li>
+
+          {/* ACTIVE */}
+          <motion.li
+            custom={1}
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={cn(styles.item, styles.active)}
+          >
+            <span className={styles.iconActive}>
+              <Loader2 size={14} className={styles.spin} />
+            </span>
+
+            <div className={styles.content}>
+              <h3 className={styles.subtitle}>
+                ProLearn — Learning Platform
+              </h3>
+              <p className={styles.description}>
+                ProLearn has been revamped into a structured learning management
+                system. I’m currently building course content — mixing technical
+                depth with creative exploration.
+              </p>
+
+              <a
+                href="https://learn.progrowing.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.link}
+              >
+                learn.progrowing.org →
+              </a>
+            </div>
+          </motion.li>
+
+          {/* UPCOMING */}
+          <motion.li
+            custom={2}
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className={styles.item}
+          >
+            <span className={styles.iconUpcoming}>
+              <Dot size={18} />
+            </span>
+
+            <div className={styles.content}>
+              <h3 className={styles.subtitle}>
+                ProForum — Mentorship Community
+              </h3>
+              <p className={styles.description}>
+                A discussion-focused forum for mentorship, peer learning, and
+                meaningful technical conversations.
+              </p>
+
+              <p className={styles.meta}>
+                Planned deployment: <code>forum.progrowing.org</code>
+              </p>
+            </div>
+          </motion.li>
         </ul>
       </div>
     </section>
