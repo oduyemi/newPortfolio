@@ -18,6 +18,14 @@ type Project = {
 const projects = [
   {
     id: 1,
+    name: "SlackBot",
+    image: "/images/projects/backend/slackbot.jpeg",
+    description: "A standup bot for slack",
+    fullDescription: `SlackBot is a standup bot. An API designed to handle daily slack standup for tasks management within an organization.`,
+    stack: ["NodeJs", "Typescript", "Mongoose, Slack"],
+  },
+  {
+    id: 2,
     name: "BriteBatch",
     image: "/images/projects/backend/britebatch.png",
     description: "An inventory management API that manages batches of products.",
@@ -25,7 +33,7 @@ const projects = [
     stack: ["Java", "SpringBoot", "MySQL"],
   },
   {
-    id: 2,
+    id: 3,
     name: "ChatBot",
     image: "/images/projects/backend/chatbt.png",
     description: "AI Chat bot",
@@ -33,7 +41,7 @@ const projects = [
     stack: ["Python", "OpenAI"],
   },
   {
-    id: 3,
+    id: 4,
     name: "FilmHouse API",
     image: "/images/projects/backend/filmhouse.png",
     description: "API that maintains the records of all movies for a sales and rental movie business. Powered by Python FastAPI",
@@ -41,7 +49,7 @@ const projects = [
     stack: ["Python", "FastAPI", "MySQL"],
   },
   {
-    id: 4,
+    id: 5,
     name: "ProForum API",
     image: "/images/projects/backend/proforum.png",
     description: "API for a forum to be integrated into the ProGrowing mentorship platform.",
@@ -49,7 +57,7 @@ const projects = [
     stack: ["Typescript", "Node.js", "Express", "Nodemon", "Mongoose"],
   },
   {
-    id: 5,
+    id: 6,
     name: "LinkOrgAPI",
     image: "/images/projects/backend/linkorg.png",
     description: "API for managing administrative actions, user authentication, session handling, and error handling.",
@@ -57,7 +65,7 @@ const projects = [
     stack: ["Typescript", "Node.js", "Express", "Nodemon", "Mongoose"],
   },
   {
-    id: 6,
+    id: 7,
     name: "GrowAPI",
     image: "/images/projects/backend/presch.png",
     description: "Backend for Grow Africa Landing page to collect waitlist for landing page's form input. Basically gathering user data.",
@@ -65,7 +73,7 @@ const projects = [
     stack: ["Typescript", "JavaScript", "Express", "Mongoose"],
   },
   {
-    id: 7,
+    id: 8,
     name: "Pre-School API",
     image: "/images/projects/backend/presch.png",
     description: "API that maintains the records of all students in a private Daycare center.",
@@ -73,7 +81,7 @@ const projects = [
     stack: ["Python", "FastAPI", "MySQL"],
   },
   {
-    id: 8,
+    id: 9,
     name: "Scissor",
     image: "/images/projects/backend/scissorapi.jpg",
     description: "Link shortner",
@@ -81,7 +89,7 @@ const projects = [
     stack: ["Python", "FastAPI", "MySQL"],
   },
   {
-    id: 9,
+    id: 10,
     name: "Schedula",
     image: "/images/projects/backend/schedula.png",
     description: "Backend for Schedula; a to-do web application",
@@ -89,7 +97,7 @@ const projects = [
     stack: ["Python", "Flask", "MySQL"],
   },
   {
-    id: 10,
+    id: 11,
     name: "ChatBot",
     image: "/images/projects/backend/chatbt.png",
     description: "AI Chat bot",
@@ -97,7 +105,7 @@ const projects = [
     stack: ["Python", "OpenAI"],
   },
   {
-    id: 11,
+    id: 12,
     name: "VerifyAPI",
     image: "/images/projects/backend/verify.png",
     description: "A product authentication backend for Verify",
@@ -105,7 +113,7 @@ const projects = [
     stack: ["Java", "Spring", "MySQL"],
   },
   {
-    id: 12,
+    id: 13,
     name: "Novunt API",
     image: "/images/projects/backend/novunt.png",
     description: "API for a forum to be integrated into the ProGrowing mentorship platform.",

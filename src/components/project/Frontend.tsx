@@ -19,6 +19,16 @@ type Project = {
 const projects = [
   {
     id: 1,
+    name: "ProGrowing",
+    image: "/images/projects/frontend/prog.jpeg",
+    description: "Official website for ProGrowing",
+    fullDescription: `Version 2: ProGrowing is a web application for programmers, aimed at helping them grow in their skill.`,
+    stack: ["Next.js", "Framer Motion", "JavaScript"],
+    category: "Frontend",
+    url: "https://progrowing.org/",
+  },
+  {
+    id: 2,
     name: "Company website",
     image: "/images/projects/white.png",
     description: "Official website of Sparkling White, UK.",
@@ -28,7 +38,7 @@ const projects = [
     url: "https://www.sparklingwhitelimited.co.uk/"
   },
   {
-    id: 2,
+    id: 3,
     name: "SR Luxuries",
     image: "/images/projects/srl.png",
     description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
@@ -38,7 +48,7 @@ const projects = [
     url: "https://srluxuries.com"
   },
   {
-    id: 3,
+    id: 4,
     name: "Hustle & Grind",
     image: "/images/projects/frontend/hustle.png",
     description: "Landing page for hacker-house accelerator.",
@@ -47,7 +57,17 @@ const projects = [
     url: "https://hustle-and-grind.vercel.app/"
   },
   {
-    id: 4,
+    id: 5,
+    name: "Orphelinat NAFO",
+    image: "/images/projects/frontend/nafo.jpeg",
+    description: "Site officiel de l'Association Nafo",
+    fullDescription: `Website for Orphelinat NAFO; a non-profit community organization...`,
+    stack: ["NextJS", "Bootstrap", "Typescript"],
+    category: "Frontend",
+    url: "https://nafo.vercel.app",
+  },
+  {
+    id: 6,
     name: "Native Soups",
     image: "/images/projects/frontend/soups.jpg",
     description: "E-commerce demo that caters for supply of indigenous soups.",
@@ -56,7 +76,7 @@ const projects = [
     url: "https://dynamic-baklava-4abc56.netlify.app/"
   },
   {
-    id: 5,
+    id: 7,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
@@ -65,7 +85,7 @@ const projects = [
     url: "https://gibarestorative.vercel.app"
   },
   {
-    id: 6,
+    id: 8,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -74,7 +94,7 @@ const projects = [
     url: "https://www.idyllconsults.com/"
   },
   {
-    id: 7,
+    id: 9,
     name: "LinkOrgNet",
     image: "/images/projects/collabo/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD",
@@ -83,7 +103,7 @@ const projects = [
     url: "https://linkorgnet.com.ng"
   },
   {
-    id: 8,
+    id: 10,
     name: "Artist Portfolio Website",
     image: "/images/projects/abecole.png",
     description: "A digital portfolio for UK-based Nigerian artist, Abraham Cole.",
@@ -92,7 +112,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 9,
+    id: 11,
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
@@ -101,7 +121,7 @@ const projects = [
     url: "https://growafrica.vercel.app"
   },
   {
-    id: 10,
+    id: 12,
     name: "Haut Logistics",
     image: "/images/projects/frontend/haut.png",
     description: "Demo for logistics web application.",
@@ -116,7 +136,7 @@ const projects = [
     url: "https://hautlogistics.vercel.app/"
   },
   {
-    id: 11,
+    id: 13,
     name: "The Churches Online Platform",
     image: "/images/projects/frontend/churches.jpg",
     description: "A religious web platform that help people to connect to local churches online.",
@@ -125,7 +145,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 12,
+    id: 14,
     name: "Musical Empire",
     image: "/images/projects/frontend/musical.png",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -134,7 +154,7 @@ const projects = [
     url: "https://musicalempire.com.ng"
   },
   {
-    id: 13,
+    id: 15,
     name: "Company website",
     image: "/images/projects/frontend/ruf.jpg",
     description: "Official website of Rufaddas Medical.",
@@ -143,7 +163,7 @@ const projects = [
     url: "https://rufaddasmedicalsupplies.com"
   },
   {
-    id: 14,
+    id: 16,
     name: "Company website",
     image: "/images/projects/frontend/urb.jpg",
     description: "Official website of UrBizEdge Limited",

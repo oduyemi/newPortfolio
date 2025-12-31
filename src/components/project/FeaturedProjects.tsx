@@ -28,6 +28,15 @@ const projects = [
   // },
   {
     id: 1,
+    name: "ProGrowing",
+    image: "/images/projects/frontend/prog.jpeg",
+    description: "Official website for ProGrowing",
+    fullDescription: `Version 2: ProGrowing is a web application for programmers, aimed at helping them grow in their skill.`,
+    stack: ["Next.js", "Framer Motion", "JavaScript"],
+    url: "https://progrowing.org/",
+  },
+  {
+    id: 2,
     name: "SR Luxuries",
     image: "/images/projects/srl.png",
     description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
@@ -36,7 +45,7 @@ const projects = [
     url: "https://srluxuries.com"
   },
   {
-    id: 2,
+    id: 3,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
@@ -45,7 +54,7 @@ const projects = [
     url: "https://gibarestorative.vercel.app"
   },
   {
-    id: 3,
+    id: 4,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -54,7 +63,7 @@ const projects = [
     url: "https://www.idyllconsults.com/"
   },
   {
-    id: 4,
+    id: 5,
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
@@ -63,7 +72,7 @@ const projects = [
     url: "https://growafrica.vercel.app"
   },
   {
-    id: 5,
+    id: 6,
     name: "LinkOrgNet",
     image: "/images/projects/collabo/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD",
@@ -72,7 +81,7 @@ const projects = [
     url: "https://linkorgnet.com.ng"
   },
   {
-    id: 6,
+    id: 7,
     name: "Artist Portfolio Website",
     image: "/images/projects/abecole.png",
     description: "A digital portfolio for UK-based Nigerian artist, Abraham Cole.",
@@ -81,7 +90,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 7,
+    id: 8,
     name: "Musical Empire",
     image: "/images/projects/musical.jpg",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -89,15 +98,15 @@ const projects = [
     stack: ["WordPress", "PhP", "ExpressJS", "NodeJs", "MySQL"],
     url: "https://musicalempire.com.ng"
   },
-  {
-    id: 8,
-    name: "Company website",
-    image: "/images/projects/frontend/urb.jpg",
-    description: "Official website of UrBizEdge Limited",
-    fullDescription: `UrBizEdge is a registered Microsoft Excel consulting, financial modelling, business intelligence, data analysis and enterprise solutions firm in Nigeria. We specialise in helping companies and high value professionals be on top of their business data.`,
-    stack: ["WordPress", "PhP", "MySQL"],
-    url: "https://rufaddasmedicalsupplies.com"
-  },
+  // {
+  //   id: 9,
+  //   name: "Company website",
+  //   image: "/images/projects/frontend/urb.jpg",
+  //   description: "Official website of UrBizEdge Limited",
+  //   fullDescription: `UrBizEdge is a registered Microsoft Excel consulting, financial modelling, business intelligence, data analysis and enterprise solutions firm in Nigeria. We specialise in helping companies and high value professionals be on top of their business data.`,
+  //   stack: ["WordPress", "PhP", "MySQL"],
+  //   url: "https://rufaddasmedicalsupplies.com"
+  // },
   // {
   //   id: 9,
   //   name: "Company website",
