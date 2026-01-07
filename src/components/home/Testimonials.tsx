@@ -30,6 +30,11 @@ const testimonials: Testimonial[] = [
     message:
       `I always look forward to seeing your deployed project. Fire up dev, I like the energy 🔥`,
   },
+  {
+    name: "Tolani Onifade",
+    role: "Software Developer",
+    message: "Meeting Yemi was my highlight of 2024",
+  },
 ];
 
 export const Testimonials: React.FC = () => {
