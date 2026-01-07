@@ -32,7 +32,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Tolani Onifade",
-    role: "Software Developer",
+    role: "Software Developer, Intern - Paritie Innovation Hub",
     message: "Meeting Yemi was my highlight of 2024",
   },
 ];
