@@ -23,7 +23,7 @@ const projects = [
     image: "/images/projects/alaso.jpg",
     description: "E-commerce web application for a SME.",
     fullDescription: `Kòfowórọlá doesn't just create garments — she weave stories into every thread. Every piece is woven on pre-order, allowing full personalization of pattern, color, and style. This ensures each design is as unique as the individual wearing it.`,
-    stack: ["NextJS", "MongoDB", "NodeJS"],
+    stack: ["NextJS", "MongoDB", "NodeJS", "Cloudinary"],
     url: "https://alaso-ventures.vercel.app"
   },
   {
