@@ -17,15 +17,15 @@ type Project = {
 };
 
 const projects = [
-  // {
-  //   id: 1,
-  //   name: "Simple Todo Application",
-  //   image: "/images/projects/todospring.jpg",
-  //   description: "Simple and classy task management app.",
-  //   fullDescription: `A lightweight Java-based application to help users schedule tasks in real-time with ease and elegance.<br/><br/><a href="https://github.com/oduyemi/todo" target="_blank">See the Code</a>`,
-  //   stack: ["Java", "Spring Framework"],
-  //   url: "https://github.com/oduyemi/todo"
-  // },
+  {
+    id: 1,
+    name: "Kòfowórọlá Alásọ",
+    image: "/images/projects/alaso.jpg",
+    description: "E-commerce web application for a SME.",
+    fullDescription: `Kòfowórọlá doesn't just create garments — she weave stories into every thread. Every piece is woven on pre-order, allowing full personalization of pattern, color, and style. This ensures each design is as unique as the individual wearing it.`,
+    stack: ["NextJS", "MongoDB", "NodeJS"],
+    url: "https://alaso-ventures.vercel.app"
+  },
   {
     id: 1,
     name: "ProGrowing",
