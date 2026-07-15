@@ -27,7 +27,7 @@ const projects = [
     url: "https://alaso-ventures.vercel.app"
   },
   {
-    id: 1,
+    id: 2,
     name: "ProGrowing",
     image: "/images/projects/frontend/prog.jpeg",
     description: "Official website for ProGrowing",
@@ -36,7 +36,16 @@ const projects = [
     url: "https://progrowing.org/",
   },
   {
-    id: 2,
+    id: 3,
+    name: "Rare Koncepts Events",
+    image: "/images/projects/rarekoncepts.jpeg",
+    description: "Website for event planner.",
+    fullDescription: `Curated luxury experiences crafted with precision, creativity, and flawless event coordination.`,
+    stack: ["NextJS", "MongoDB", "NodeJS"],
+    url: "https://rarekonceptsevents.ng"
+  },
+  {
+    id: 4,
     name: "SR Luxuries",
     image: "/images/projects/srl.png",
     description: "E-commerce web application for the luxury fashion brand, SR LUXURIES",
@@ -45,7 +54,16 @@ const projects = [
     url: "https://srluxuries.com"
   },
   {
-    id: 3,
+    id: 5,
+    name: "Losode",
+    image: "/images/projects/losode.jpeg",
+    description: "E-commerce demo",
+    fullDescription: `Explore exclusive, trend-defining pieces curated by our expert stylists. Transform your wardrobe with Losode’s unique, fashion-forward finds.<br/><br/><a href="https://github.com/oduyemi/losode" target="_blank">See the Code</a>`,
+    stack: ["NextJS", "Typescript", "Cloudinary", "Mongoose"],
+    url: "https://losode-one.vercel.app/"
+  },
+  {
+    id: 6,
     name: "Giba Healthcare",
     image: "/images/projects/giba.png",
     description: "Web app for a modern wellness clinic across 4 U.S. states.",
@@ -54,7 +72,7 @@ const projects = [
     url: "https://gibarestorative.vercel.app"
   },
   {
-    id: 4,
+    id: 7,
     name: "Idyll Consults",
     image: "/images/projects/idyllconsults.jpg",
     description: "Official platform for UK-based Idyll Consults.",
@@ -63,7 +81,7 @@ const projects = [
     url: "https://www.idyllconsults.com/"
   },
   {
-    id: 5,
+    id: 8,
     name: "GrowAfrica Landing Page",
     image: "/images/projects/growafrica.jpg",
     description: "High-converting landing page for a Made-in-Africa ecommerce platform.",
@@ -72,7 +90,7 @@ const projects = [
     url: "https://growafrica.vercel.app"
   },
   {
-    id: 6,
+    id: 9,
     name: "LinkOrgNet",
     image: "/images/projects/collabo/linkorgnet.png",
     description: "Corporate website for LinkOrg Networks LTD",
@@ -81,7 +99,7 @@ const projects = [
     url: "https://linkorgnet.com.ng"
   },
   {
-    id: 7,
+    id: 10,
     name: "Artist Portfolio Website",
     image: "/images/projects/abecole.png",
     description: "A digital portfolio for UK-based Nigerian artist, Abraham Cole.",
@@ -90,7 +108,7 @@ const projects = [
     url: "https://abrahamcole.vercel.app"
   },
   {
-    id: 8,
+    id: 11,
     name: "Musical Empire",
     image: "/images/projects/musical.jpg",
     description: "E-commerce web application for Musical Empire Nigeria Limited",
@@ -117,7 +135,7 @@ const projects = [
   //   url: "https://rufaddasmedicalsupplies.com"
   // },
   {
-    id: 9,
+    id: 12,
     name: "Company website",
     image: "/images/projects/white.png",
     description: "Official website of Sparkling White, UK.",
